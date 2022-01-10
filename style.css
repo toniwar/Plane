@@ -1,0 +1,344 @@
+body {
+    font-size: 15pt;
+    background: black;
+}
+#main{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+#screen{
+	margin-left: auto;
+	margin-right: auto;
+	width:400px;
+	height: 600px;
+	margin-top: 100px;
+ position: relative;
+}
+.joystick {
+	background: silver;
+	border: 2px solid;
+	padding: 10px;
+	width: 80px;
+	position: absolute;
+	border-radius: 5px;
+	font-size: 20px;
+	z-index: 4;
+}
+#butLeft{
+  text-align: center;
+	bottom: 0;
+left: 0;
+display: none;
+}
+#butRight{
+  text-align: center;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+#start{
+	text-align: center;
+	bottom: 0;
+	left: 150px;
+}
+#stop {
+	text-align: center;
+	bottom: 0;
+	left: 150px;
+	display: none;
+}
+.joystick:active{
+	background: yellow;
+	color: red;
+}
+#midle{
+	background: dimgray;
+	width: 200px;
+	padding:41px 0 0 0;
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	border: 2px solid;
+	z-index: 4;
+}
+#fon1{
+	position: absolute;
+	width: 400px;
+	height: 2260px;
+	background-image: url('1.jpg');
+	background-size: cover;
+	bottom: 100px;
+	left: auto;
+	right: auto;
+	z-index: -1;
+}
+#cloud1{
+	position: absolute;
+	height: 300px;
+	width: 400px;
+	left:0;
+	bottom: 2200px;
+	z-index: 3
+}
+#cloud3 {
+	position: absolute;
+	height: 300px;
+	width: 400px;
+	left: 0;
+	bottom: 0;
+	z-index: 1
+}
+#cloud2 {
+	position: absolute;
+	height: 300px;
+	width: 400px;
+	left: 0;
+	bottom: 4450px;
+	z-index: 1
+}
+#fon2 {
+	position: absolute;
+	width: 400px;
+	height: 2260px;
+	background-image: url('2.jpg');
+	background-size: cover;
+	bottom: 2260px;
+	left: auto;
+	right: auto;
+}
+/*#fon3 {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background-image: url('3.jpg');
+	background-size: cover;
+	bottom: 900px;
+	left: auto;
+	right: auto;
+}*/
+#air{
+	width: 100px;
+	height: 200px;
+	position: absolute;
+	bottom: 50px;
+	left: 150px;
+	z-index: 2;
+
+}
+#rocket1{
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	bottom: 80px;
+	left: 200px;/*200*/
+	z-index: 2;
+}
+#rocket2 {
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	bottom: 80px;
+	left: 140px;
+	z-index: 2;
+}
+#rocket1f{
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	bottom: 80px;
+	left: 200px;/*200*/
+	z-index: 2;
+}
+#rocket2f {
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	bottom: 80px;
+	left: 140px;
+	z-index: 2;
+}
+.fire{
+	position: absolute;
+	background: red;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: bold;
+	border: 2px solid black;
+	width: 60px;
+	height: 60px;
+	bottom: 60px;
+	z-index: 4;
+	
+}
+#fireR{
+	left: 330px;
+	display: none;
+}
+#fireL{
+	left: 10px;
+	display: none;
+}
+.fire:active{
+	background: lime;
+}
+#enemy{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 1900px;
+  left: 100px;
+  z-index: 2;
+  opacity: 100%;
+  display: block;
+
+  
+}
+#boom1{
+ position: absolute;
+ width: 300px;
+ height: 300px;
+ bottom: 0;
+ left: 50px;
+ z-index: 2;
+ display: none;
+ opacity: 0%;
+ 
+	
+}
+#boomImg{
+	width: 100px;
+	
+}
+#enemyImg{
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#targetZoneL{
+	position: absolute;
+	width: 100px;
+	height: 110px;
+	left: 45px;
+	
+}
+#targetZoneR {
+	position: absolute;
+	width: 2px;
+	height: 110px;
+	left: 150px;
+
+}
+#targetZoneC {
+	position: absolute;
+	width: 26px;
+	height: 200px;
+	left: 85px;
+
+}
+#targetZoneL1{
+	position: absolute;
+	width: 83px;
+	height: 50px;
+	left: 5px;
+	bottom: 60px;
+	
+}
+#targetZoneC1 {
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	left: 43px;
+	top: 8px;
+
+}
+#targetZoneR1 {
+	position: absolute;
+	width: 2px;
+	height: 50px;
+	left: 90px;
+	bottom: 60px;
+
+}
+#tab{
+	position: absolute;
+	
+	width: 180px;
+	height: 50px;
+ top: -100px;
+ left: 0;
+ z-index: 5;
+ display: flex;
+ color: lime;
+ font-size: 15px;
+}
+#dCL, #dCR{
+	text-align: center;
+	width: 50%;
+	height: 45px;
+	border:3px solid lime;
+	border-radius: 5px;
+	background: black;
+	opacity: 60%;
+	
+}
+#over{
+	position: absolute;
+	left: 5px;
+	top: 100px;
+	width: 280px;
+	padding: 50px;
+	background: silver;
+	border: 5px solid black;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	display: none;
+	z-index: 5;
+}
+#again{
+	padding: 15px;
+	background: crimson;
+	border: 2px solid yellow;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 15px;
+	width: 100px;
+	margin: auto;
+	
+}
+#again:active{
+	background: lime;
+}
+#over2{
+	position: absolute;
+	left: 5px;
+	top: 100px;
+	width: 280px;
+	padding: 50px;
+	background: silver;
+	border: 5px solid black;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+ display: none;
+	z-index: 5;
+}
+#again2{
+	padding: 15px;
+	background: crimson;
+	border: 2px solid yellow;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 15px;
+	width: 100px;
+	margin: auto;
+	
+}
+#again2:active{
+	background: lime;
+}
